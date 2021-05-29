@@ -1,0 +1,60 @@
+/*estilo hover menu*/
+#miMenu a:hover {
+    color: #ffffff;
+    border-bottom: solid 2px white;
+    border-radius: 20%;
+    transition: all 0.35s ease;
+}
+
+/*estilos iconos redes*/
+.iconos ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.iconos ul li i {
+    margin-top: 11px;
+}
+.iconos ul li {
+    list-style: none;
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    width: 60px;
+    background: black;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 15px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.iconos ul li::before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    background: rgb(161, 23, 4);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.iconos ul li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgb(133, 7, 7);
+}
+.iconos ul li:hover {
+    color: rgb(212, 27, 3);
+    box-shadow: 0 0 15px rgb(133, 7, 7);
+    text-shadow: 0 0 15px rgb(133, 7, 7);
+}
+
+/*estilos lista menu tarjetas*/
+.space {
+    padding: 0 10px;
+}

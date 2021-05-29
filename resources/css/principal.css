@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+
+/*font-family: 'Dancing Script', cursive;
+font-family: 'KoHo', sans-serif;
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+header {
+    background: rgb(87, 4, 4);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 35px;
+}
+#miMenu {
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+}
+#miMenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+}
+#miMenu ul li {
+    list-style: none;
+    margin: 5px auto;
+}
+#miMenu ul li a {
+    text-decoration: none;
+    color: rgb(204, 203, 203);
+    font-family: 'KoHo', sans-serif;
+    font-size: 20px;
+}
+.btnToggle {
+    display: none;
+    align-content: flex-start;
+    padding: 15px 30px;
+    color: white;
+}
+.btnToggle:hover {
+    color: rgb(153, 5, 5);
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Koho', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    background-color: rgba(87, 4, 4, 0.61);
+    padding: 20px;
+}
+#title2 {
+    text-align: center;
+    color: rgb(204, 202, 202);
+    font-family: 'Koho', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    background-color: rgba(3, 3, 3, 0.774);
+    padding: 20px;
+}
+#title2:hover {
+    color: white;
+    cursor: pointer;
+}
+h3 {
+    font-weight: bold;
+}
+
+body{
+    background-image: url('../images/fondo6.5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Koho', sans-serif;
+}
+
+main #sliderImg {
+    text-align: center;
+    padding: 10px;
+}
+main #sliderImg img {
+    box-shadow: 0 0 15px rgba(255, 253, 253, 0.76);
+}
+
+/*Categorias de menu*/
+#categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#categorias article {
+    color: white;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    padding: 10px 10px;
+}
+#categorias .fondo {
+    background-color: rgba(3, 3, 3, 0.781);
+    border-radius: 5px;
+    padding-top: 15px;
+}
+#categorias .fondo .borde {
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.76);
+}
+
+#categorias article h2 {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+}
+#categorias article h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+h3{
+    border-top: solid 1px white;
+}
+#local {
+    border-top: solid 1px white;
+    font-size: 20px;
+}
+
+/*Pie de pagina*/
+#infoContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(26, 2, 2, 0.596);
+}
+
+/*Definiendo los media queries para dispositivos medianos*/
+@media only screen and (max-width:760px) {
+    body {
+        background: black;
+    }
+    /*Coloco miMenu verticalmente*/
+    header {
+        height: 100%;
+        flex-direction: column;
+    }
+    header {
+        background: black;
+    }
+    #miMenu ul {
+        flex-direction: column;
+        width: 70%;
+    }
+    #categorias article .ocultar {
+        display: none;
+    }
+    h1 {
+        background-color: black;
+    }
+    #infoContacto {
+        background-color: black;
+    }
+    main #sliderImg img {
+        width: 600px;
+        height: 400px;
+    }
+    
+}
+/*media queries para pantallas pequeñas*/
+@media all and (max-width:600px){
+    body {
+        background: rgb(87, 4, 4);
+    }
+    /*Coloco miMenu verticalmente*/
+    header {
+        height: 100%;
+    }
+    #miMenu ul {
+        flex-direction: column;
+        width: 70%;
+    }
+    .btnToggle {
+        display: block;
+    }
+    /*Slider*/
+    #sliderImg {
+         display: none;
+    }
+    #title {
+        display: none;
+    }
+    #categorias article h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #categorias article h3, p {
+        font-size: 17px;
+    }
+    #categorias article p {
+        font-size: 15px;
+    }
+    .mapa {
+        display: none;
+    }
+
+}
+/********/
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    body {
+        background: rgb(54, 7, 7);
+    }
+    #infoContacto {
+        background-color: black;
+    }
+}

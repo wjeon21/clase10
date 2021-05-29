@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Libreria JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
+    <!--libreria fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+
+    <!-- mis Funciones Javascript (JQuery)-->
+    <script src="resources/js/basico.js"></script>
+
+    <!-- mis estilos CSS -->
+    <link rel="stylesheet" href="resources/css/principal.css">
+    <link rel="stylesheet" href="resources/css/iconos.css">
+    
+</head>
+<body> 
+    <header>
+        <a href="#" class="btnToggle"> <i  class="fas fa-align-justify fa-1x"></i></a>
+        <nav id="miMenu">
+            <ul> 
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="title">TOKYO RESTAURANT</h1>
+        <aside id="sliderImg">
+            <img src="./resources/images/slide1.jpg" alt="">
+            <img src="./resources/images/slide2.jpg" alt="">
+            <img src="./resources/images/slide3.jpg" alt="">
+            <img src="./resources/images/slide4.jpg" alt="">
+        </aside> <br>
+        <h1 id="title2">MENÚ TOKYO</h1> <br>
+        <!--Tarjetas categorias-->
+        <section id="categorias">
+            <article class="fondo">
+                <img class="borde" src="./resources/images/miso.jpg" alt="">
+                <h2>ENTRADAS</h2>
+                <p class="ocultar">Lorem ipsum, dolor consectetur <br> adipisicing 
+                    Nobis quas tempora <br></p>
+                    <article id="entrada" >
+                        <figure>
+                            <h3>Sopa Miso</h3>
+                            <img src="./resources/images/entrada1.png" alt="" class="ocultar">
+                            <p>Miso con Tofu.</p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Yakimandu</h3>
+                            <img src="./resources/images/entrada2.png" alt="" class="ocultar">
+                            <p>Dumpling de carne y <br> vegetales fritos. </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Niku Tempura</h3>
+                            <img src="./resources/images/entrada3.png" alt="" class="ocultar">
+                            <p>Empanizado de Res con <br> trozos de queso.</p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Ensalada Wakami</h3>
+                            <img src="./resources/images/entrada4.png" alt="" class="ocultar">
+                            <p>Alga marina, pepino, aceite de <br> ajonjolí y vinagre.</p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Dori Tempura</h3>
+                            <img src="./resources/images/entrada3.png" alt="" class="ocultar">
+                            <p>Empanizado de Pollo con <br> trozos de queso.</p>
+                        </figure>
+                    </article>
+            </article>
+            <article class="fondo">
+                <img class="borde"  src="./resources/images/sopa.jpg" alt="">
+                <h2>SOPAS Y FIDEOS</h2>
+                <p class="ocultar">Lorem ipsum, dolor consectetur <br> adipisicing 
+                    Nobis quas tempora <br></p>
+                    <article id="sopa" >
+                        <figure>
+                            <h3>Sopa Ramen</h3>
+                            <img src="./resources/images/sopa1.png" alt="" class="ocultar">
+                            <p>Fideos Ramen, vegetales, <br> Hongos con Pollo
+                                o Camarón <br> picante y con Huevo. <br> (Opcional)
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Sopa de Tofu</h3> <br>
+                            <img src="./resources/images/sopa2.png" alt="" class="ocultar">
+                            <br>
+                            <p>Tofu suave, Camarón, Almeja <br>
+                                huevo-picante. <br> (opcional) </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Sopa de Mariscos</h3> <br>
+                            <img src="./resources/images/sopa3.png" alt="" class="ocultar">
+                            <p>Mariscos con tofu y vegetales. <br>
+                                (Arroz incluido) </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Yaki Ramen</h3> <br>
+                            <img src="./resources/images/sopa4.png" alt="" class="ocultar"> <br>
+                            <p>Fideos Salteados con Camarón, <br>
+                                Hongos y Vegetales. 
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Yaki Udon</h3> <br>
+                            <img src="./resources/images/sopa5.png" alt="" class="ocultar"> <br>
+                            <p>Fideo grueso salteado con camarón, <br>
+                                Hongos y Vegetales.  </p>
+                        </figure>
+                    </article>
+                
+            </article>
+            <article class="fondo">
+                <img class="borde"  src="./resources/images/principal.jpg" alt="">
+                <h2>PLATOS ESPECIALES</h2>
+                <p class="ocultar">Lorem ipsum, dolor consectetur <br> adipisicing 
+                    Nobis quas tempora <br></p>
+                    <article id="especiales" >
+                        <figure>
+                            <h3>Yakimeshi</h3> <br>
+                            <img src="./resources/images/plato1.png" alt="" class="ocultar"> <br>
+                            <p>Arroz con vegetales y <br> pollo/ res/camarón. <br> 
+                                (opcional)
+                            </p>
+                        </figure>
+                        <br> <br>
+                        <figure>
+                            <h3>Tonkatsu</h3> <br>
+                            <img src="./resources/images/plato2.png" alt="" class="ocultar"> <br>
+                            <p>Carne de cerdo empanizado <br>
+                                con arroz y ensalada <br>
+                                (Salsa opcional).
+                            </p>
+                        </figure>
+                        <br> <br>
+                        <figure>
+                            <h3>Unagi Don</h3> <br>
+                            <img src="./resources/images/plato3.png" alt="" class="ocultar"> <br>
+                            <p>Arroz con piezas de anguila, <br>
+                                alga, y vegetales. </p>
+                        </figure>
+                        <br> <br>
+                        <figure>
+                            <h3>Teriyaki Pollo</h3> <br>
+                            <img src="./resources/images/plato4.png" alt="" class="ocultar"> <br>
+                            <p>Pollo con salsa teriyaki, <br>
+                                vegetales, y arroz incluído.
+                            </p>
+                        </figure>
+                        <br> <br>
+                        <figure>
+                            <h3>Tempura Mixto</h3> 
+                            <img src="./resources/images/plato5.png" alt="" class="ocultar"> <br>
+                            <p>Camarones, calamar, piezas <br>
+                                de pollo, papas, cebolla <br>
+                                (salsa opcional).
+                            </p> 
+                        </figure>
+                    </article>
+                
+            </article>
+            <article class="fondo">
+                <img class="borde" src="./resources/images//sushi01.jpg" alt="">
+                <h2>SUSHI ROLLS</h2>
+                <p class="ocultar">Lorem ipsum, dolor consectetur <br> adipisicing 
+                    Nobis quas tempora <br></p>
+                    <article id="sushi" >
+                        <figure>
+                            <h3>Sakura Roll</h3>
+                            <img src="./resources/images/rollo1.png" alt="" class="ocultar">
+                            <p>Atún, Kanikama, Queso, <br>
+                                Aguacate, Camarón y Pepino. 
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Masagoyaki roll</h3>
+                            <img src="./resources/images/rollo2.png" alt="" class="ocultar">
+                            <p>Masago, Cangrejo, <br>
+                                Aguacate y Queso. <br> (Empanizado)
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Shitake Roll</h3>
+                            <img src="./resources/images/rollo3.png" alt="" class="ocultar">
+                            <p>Salmón, Hongo dulce, <br>
+                                Aguacate y Queso. </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Kanikama Roll</h3>
+                            <img src="./resources/images/rollo4.png" alt="" class="ocultar">
+                            <p>Cangrejo, Camarón <br>
+                                cocido y Queso.
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Unagi Roll</h3>
+                            <img src="./resources/images/rollo5.png" alt="" class="ocultar">
+                            <p>Anguila, Aguacate, <br>
+                                Pepino y Ajonjolí tostado   </p>
+                        </figure>
+                    </article>
+            </article>
+            <article class="fondo">
+                <img class="borde" src="./resources/images/bebida01.jpg" alt="">
+                <h2>BEBIDAS</h2>
+                <p class="ocultar">Lorem ipsum, dolor consectetur <br> adipisicing 
+                    Nobis quas tempora <br></p>
+                    <article id="sake" >
+                        <figure>
+                            <h3>Cócteles</h3>
+                            <img src="./resources/images/bebida1.png" alt="" class="ocultar">
+                            <p>Margarita, Macúa, <br>
+                                Daiquiri, Apple Martini.
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Bebidas Frías</h3> <br>
+                            <img src="./resources/images/bebida2.png" alt="" class="ocultar">
+                            <p>Gaseosas, Jugos Naturales, <br>
+                                Té de limón, Limonada con soda.
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Bedidas Calientes</h3>
+                            <img src="./resources/images/bebida3.png" alt="" class="ocultar">
+                            <p>Café Americano, Capuccino, <br>
+                                 Té Negro, Té Verde. </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Licor</h3> <br>
+                            <img src="./resources/images/bebida02.jpg" alt="" class="ocultar">
+                            <p>Sapporo, Asahi, <br>
+                                Moropotente, Sake. 
+                            </p>
+                        </figure>
+                    </article>
+            </article>
+            <article class="fondo">
+                <img class="borde" src="./resources/images/postre.jpg" alt="">
+                <h2>POSTRES</h2>
+                <p class="ocultar">Lorem ipsum, dolor consectetur <br> adipisicing 
+                    Nobis quas tempora <br></p>
+                    <article id="postre" >
+                        <figure>
+                            <h3>Helados</h3>
+                            <img src="./resources/images/postre1.png" alt="" class="ocultar">
+                            <p>Helado Tempura, <br>
+                                Banana Tempura.
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Chocolate</h3>
+                            <img src="./resources/images/postre2.png" alt="" class="ocultar">
+                            <p>Turrón de Chocolate, <br>
+                                Pastel de Chocolate.
+                            </p>
+                        </figure>
+                        <br>
+                        <figure>
+                            <h3>Variados</h3>
+                            <img src="./resources/images/postre3.png" alt="" class="ocultar">
+                            <p>Matcha Cheesecake, Tiramisu, <br>
+                                Pastel de Zanahoria. </p>
+                        </figure>
+                        <figure>
+                            <img src="./resources/images/bebida4.png" alt="">
+                        </figure>
+                    </article>
+            </article> <br>
+        </section> 
+        <footer id="infoContacto"> <br>
+            <h2 style="font-weight: bolder;">NUESTROS CONTACTOS</h2> <br>
+            <p><span id="local">Dirección Local <br></span> <br>
+                Planes de Altamira por la pasteleria Sampson <br>
+                50 mts al sur antes de Cocina de D, 14043
+            </p> <br>
+            <!--Redes Sociales-->
+
+            <div class="iconos">
+                <ul>
+                    <li><i class="fab fa-facebook-f fa-2x"></i></li>
+                    <li><i class="fab fa-instagram fa-2x"></i></li>
+                    <li><i class="fas fa-phone fa-2x"></i></li>
+                    <li><i class="fas fa-envelope fa-2x"></i></li>
+                </ul>
+            </div> <br>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4293737295725!2d-86
+                .23261948465637!3d12.08273059144337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73
+                ffb72da3b3e9%3A0x4f968b3ba0707707!2sUNICA%20%7C%20Universidad%20Cat%C3%B3lica%20Redemptoris%20
+                Mater!5e0!3m2!1ses!2sni!4v1621715441297!5m2!1ses!2sni" width="400" height="250" 
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>
